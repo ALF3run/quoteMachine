@@ -55,7 +55,7 @@ var quoteCall = function () {
         },
         /* Function to be executed if the request succed */
         success: function (result) {
-            $('#quote').html("<blockquote><p>" + result.quote + "<br><small>" + result.author + "</small></p></blockquote>").hide();
+            $('#quote').html("<blockquote><p>" + result[0].quote + "<br><small>" + result[0].author + "</small></p></blockquote>").hide();
 			$('#quote').fadeIn();
 			quote = $('#quote p').text();
 			
